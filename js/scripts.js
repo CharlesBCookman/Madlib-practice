@@ -1,11 +1,7 @@
 window.onload = function() {
-  // new line below
-  console.log("Script executing!");
-
   let form = document.querySelector("form");
   form.onsubmit = function(event) {
-    // new line below
-    console.log("Submit form successfully reached.");
+    event.preventDefault();
     const person1Input = document.getElementById("person1Input").value;
     const person2Input = document.getElementById("person2Input").value;
     const animalInput= document.getElementById("animalInput").value;
